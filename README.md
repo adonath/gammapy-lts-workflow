@@ -1,7 +1,7 @@
 # Gammapy LTS Workflow
 Repository to practice the Gammapy LTS workflow
 
-## Semantic Versioning
+## Versioning Scheme
 We will follow the [Astropy versioning scheme](https://github.com/astropy/astropy-APEs/blob/main/APE2.rst#version-numbering).
 This means for Gammapy we will use a numbering scheme like:
 ```
@@ -33,7 +33,12 @@ As a rough guideline:
 - Bugfix relases cannot break the API
 
 
-
+- On the feature freeze date a new release branch is created, named e.g. `v1.0.x`.
+- A feature freeze will mean **no more major new feature pull requests will be accepted for that version**, but minor improvements, bug fixes, or documentation additions are still acceptable.
+- From this point on the release happens from this branch `v1.0.x`. 
+- First create a release candidate i.e. tag `v1.0rc1`, collect feedback from beta testers and developers for ~1 week.
+- If additonal issue are found those should be fixed and a new release candidate `v1.0rc2` is tagged. A new testing period starts
+- Tag `v1.0` and release
 
 ## How to do a release
 
