@@ -42,7 +42,7 @@ As a rough guideline:
 
 ## How to do a release
 
-If you would like to take the role of a release manager you need an account for [TestPyPi](https://test.pypi.org). If you don't have one, create one here: https://test.pypi.org/account/register/.
+If you would like to take the role of a release manager you need an account for [TestPyPi](https://test.pypi.org). If you don't have one, create one here: https://test.pypi.org/account/register/. 
 
 Upload test release:
 ```
