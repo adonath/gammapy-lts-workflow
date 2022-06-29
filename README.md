@@ -27,12 +27,17 @@ Within each "category" the numbers are counted from 0. Check the following examp
 * 2.0.0 (LTS release)
 ```
 
-As a rough guideline:
+
 - LTS are maintained with bugfix releases for ~ 2 years, changes cannot break the API
 - Minor releases every ~6 months, changes can break the API using a deprecation system, which thnan breaks backward compatibility two minor versions later
 - Bugfix relases cannot break the API
 
 
+
+
+## How to do a release
+
+A a rough guideline:
 - On the feature freeze date a new release branch is created, named e.g. `v1.0.x`.
 - A feature freeze will mean **no more major new feature pull requests will be accepted for that version**, but minor improvements, bug fixes, or documentation additions are still acceptable.
 - From this point on the release happens from this branch `v1.0.x`. 
@@ -40,9 +45,9 @@ As a rough guideline:
 - If additonal issue are found those should be fixed and a new release candidate `v1.0rc2` is tagged. A new testing period starts
 - Tag `v1.0` and release
 
-## How to do a release
-
 If you would like to take the role of a release manager you need an account for [TestPyPi](https://test.pypi.org). If you don't have one, create one here: https://test.pypi.org/account/register/. 
+
+Follow [Astropy Affiliated Package release instructions](https://docs.astropy.org/en/latest/development/astropy-package-template.html)
 
 Upload test release:
 ```
