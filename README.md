@@ -49,4 +49,15 @@ Upload test release:
 twine upload --repository testpypi dist/*
 ```
 
+Install from TestPypi:
+```
+python3 -m pip install --index-url https://test.pypi.org/simple/ your-package
+```
+
+Install release candidate:
+```
+python3 -m pip install --pre --index-url https://test.pypi.org/simple/ your-package
+```
+
+
 ## Ressources
